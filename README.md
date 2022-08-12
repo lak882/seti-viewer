@@ -1,23 +1,23 @@
-<h1 align="center">
+<h1>
   <br>
-  <a href=""><img src="logo/Logo_h256.png" alt="SDA Extension Tool" height="100"></a>
+  <a href=""><img src="logo/Logo_h256.png" height="100"></a>
 </h1>
-      
+
+<h4>An easy to use SDA extension UI</h4>
+
 # SDA Extension Tool (SETI) Viewer
+
+Add-on to unlock the Clinical Viewer feature of SDA Extension Tool.
 
 ## Installation
 
-0. You must have installed [SDA Extension Tool](https://iris-se-eval2.iscinternal.com/open-exchange-projects/summer-22/sda-extension-tool) for this to work.
-
-1. Download this repository. 
+1. You must have installed [SDA Extension Tool](https://iris-se-eval2.iscinternal.com/open-exchange-projects/summer-22/sda-extension-tool) for this to work.
 
 2. For Clinical Viewer open a Terminal in the HSCUSTOM namespace.
 
-3. Using the [ObjectScript Package Manager](https://openexchange.intersystems.com/package/ObjectScript-Package-Manager) load the respository. Replace {path-to-sda-extension-tool-viewer} with the path to your repository download.
-
+3. Use [ObjectScript Package Manager](https://openexchange.intersystems.com/package/ObjectScript-Package-Manager) to install SETI Viewer.
 ```
-HSCUSTOM> zpm 
-zpm:HSCUSTOM> load "{path-to-sda-extension-tool-viewer}"
+HSCUSTOM> zpm "install seti-viewer"
 ```
 
 ### Requirements
