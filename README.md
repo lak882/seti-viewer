@@ -9,7 +9,7 @@ Add-on to unlock the Clinical Viewer feature of SDA Extension Tool.
 
 ## Installation
 
-1. You must have installed [SDA Extension Tool](https://iris-se-eval2.iscinternal.com/open-exchange-projects/summer-22/sda-extension-tool) for this to work.
+1. You must have installed [SDA Extension Tool](https://openexchange.intersystems.com/package/SETI) for this to work.
 
 2. For Clinical Viewer open a Terminal in the HSCUSTOM namespace.
 
@@ -20,7 +20,7 @@ HSCUSTOM> zpm "install seti-viewer"
 
 ### Requirements
 
-* [SDA Extension Tool](https://iris-se-eval2.iscinternal.com/open-exchange-projects/summer-22/sda-extension-tool) installed 
+* [SDA Extension Tool](https://openexchange.intersystems.com/package/SETI) installed 
 
 
 
