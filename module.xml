@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="dc-sample-template.ZPM">
+  <Document name="seti-viewer.ZPM">
     <Module>
-      <Name>dc-sample-template</Name>
-      <Version>1.1.0</Version>
-      <Description>A basic module template for InterSystems ObjectScript with Unittests</Description>
+      <Name>seti-viewer</Name>
+      <Version>1.0.0</Version>
+      <Description>SDA Extension Tool</Description>
+      <Keywords>SDA</Keywords>
+      <Author>
+        <Person>Louis Kabelka</Person>
+        <Organization>InterSystems</Organization>
+        <CopyrightDate>2022</CopyrightDate>
+      </Author>
       <Packaging>module</Packaging>
-      <SourcesRoot>src/iris</SourcesRoot>
-      <Resource Name="dc.sample.PKG"/>
-      <UnitTest Name="/tests" Package="dc.sample.unittests" Phase="test"/>
-    </Module>
+      <Default Name="count" Value="7" />       
+      <SourcesRoot>src</SourcesRoot>
+      <Resource Name="SETIViewer.PKG"/>
+      <Resource Name="SETI.PKG"/>
+       <Invokes>
+        <Invoke Class="SETIViewer.Setup.Install" Method="Install"></Invoke>
+      </Invokes>
+
+      <!-- REST Api that communicated with backend. -->
+      <CSPApplication 
+        Url="/dispatch"
+        MatchRoles=":%All"
+        PasswordAuthEnabled="0"
+        UnauthenticatedEnabled="1"
+        DispatchClass="SETI.Dispatch"
+        CookiePath="/dispatch/"
+        UseCookies="2"
+      />
+
+      <!-- Creates another web app to display SETIViewer.DispatchViewer. -->
+      <!-- Look in SETIViewer.Install . -->
+
+    </Module>    
   </Document>
 </Export>
+
