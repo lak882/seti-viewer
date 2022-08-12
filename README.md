@@ -3,8 +3,6 @@
   <a href=""><img src="logo/Logo_h256.png" height="100"></a>
 </h1>
 
-<h4>An easy to use SDA extension UI</h4>
-
 # SDA Extension Tool (SETI) Viewer
 
 Add-on to unlock the Clinical Viewer feature of SDA Extension Tool.
