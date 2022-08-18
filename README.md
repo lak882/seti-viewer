@@ -27,6 +27,6 @@ HSCUSTOM> zpm "install seti-viewer"
 * [SDA Extension Tool](https://openexchange.intersystems.com/package/SETI) installed 
 * [ObjectScript Package Manager](https://openexchange.intersystems.com/package/ObjectScript-Package-Manager) installed 
 * HealthShare with appropriate license
-* SETI Viewer uses HSVIEWER as its Viewer Access Gateway namespace ((see [Setup Overview](https://openexchange.intersystems.com/package/SETI#setup-overview))
+* SETI Viewer uses HSVIEWER as its Viewer Access Gateway namespace (see [Setup Overview](https://openexchange.intersystems.com/package/SETI#setup-overview))
 
 
